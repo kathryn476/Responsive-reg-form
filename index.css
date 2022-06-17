@@ -1,0 +1,108 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+body{
+    background-color: black;
+}
+.content{
+    background: var(--red) url(./img/bg-intro-desktop.png);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin: 0 auto ;
+    width: 70%;
+    padding-top: 40px;
+}
+@media screen  and (min-width:320px) and (max-width:1200px){
+    .content{
+        background: var(--red) url(./img/bg-intro-desktop.png);
+        background-blend-mode: overlay;
+    }
+}
+.flex{
+    display: flex;
+}
+.flexcard{
+    margin-right: 30px;
+    padding: 100px 15px 30px;
+    color: white;
+    font-size: 25px;
+}
+.flexcard p{
+    font: 1em sans-serif;
+    font-size: 10px;
+}
+@media screen  and (min-width:320px) and (max-width:1200px) {
+    .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.try{
+    box-sizing: border-box;
+    border: 2px;
+    background-color: var(--blue);
+    line-height: 2.5;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+@media screen and (min-width: 320px){
+    .try{
+        text-align: center;
+    }
+    
+}
+.form{
+    background-color: white;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+@media screen  and (min-width:320px){
+    .form{
+        padding: 20px;
+    }
+    
+}
+form input{
+    width: 370px;
+    margin-left: 10px;
+    height: 40px;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 5px;
+    margin: 10px;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+button{
+    width: 370px;
+    background-color: var(--green);
+    margin: 12px;
+    height: 40px;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    font-size: x-small;
+    
+}
+#text{
+    font-size: xx-small;
+    margin-left: 50px;
+
+}
+a{
+    text-decoration: none;
+    color: red;
+}
